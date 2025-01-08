@@ -5,10 +5,7 @@ import Header from '~/components/widgets/Header.astro';
 
 import Content from '~/components/widgets/Content.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import Features3 from '~/components/widgets/Features3.astro';
-import Testimonials from '~/components/widgets/Testimonials.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+
 import { getPermalink } from '~/utils/permalinks';
 
 const metadata = {
@@ -22,9 +19,8 @@ const metadata = {
     <Header
       links={[
         { text: 'Home', href: '/' },
-        { text: 'About', href: '/about' },
-        { text: 'Resume', href: '/resume' },
         { text: 'Projects', href: '/projects' },
+        { text: 'Resume', href: '/resume' },
       ]}
       actions={[
         {

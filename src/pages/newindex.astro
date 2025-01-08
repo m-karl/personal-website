@@ -43,16 +43,20 @@ const metadata = {
     id="hero"
     title="Karl Ma"
     tagline="Personal Web Demo"
-    actions={[{ variant: 'primary', text: 'Hire me', href: getPermalink('/contact#form') }]}
+    actions={[
+      { variant: 'primary', text: 'Hire me', href: getPermalink('/contact#form') },
+      { variant: 'secondary', text: 'Hire me', href: getPermalink('/contact#form') },
+      { variant: 'tertiary', text: 'Hire me', href: getPermalink('/contact#form') },
+    ]}
     image={{
       src: profileimage,
       alt: 'Profile',
     }}
   >
     <Fragment slot="subtitle">
-      I'm a Graphic Designer passionate about crafting visual stories. <br /> With 5 years of experience and a degree from
-      New York University's School of Design. I infuse vitality into brands and designs, transforming concepts into captivating
-      realities.
+      I'm not a Graphic Designer passionate about crafting visual stories. <br /> Without 5 years of experience and a degree
+      from New York University's School of Design. I do not infuse vitality into brands and designs, transforming concepts
+      into captivating realities.
     </Fragment>
   </Hero2>
 
@@ -159,7 +163,7 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-green-200 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-green-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
 
