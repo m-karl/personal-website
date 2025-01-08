@@ -23,9 +23,8 @@ const metadata = {
     <Header
       links={[
         { text: 'Home', href: '/' },
-        { text: 'About', href: '/about' },
-        { text: 'Resume', href: '/resume' },
         { text: 'Projects', href: '/projects' },
+        { text: 'Resume', href: '/resume' },
       ]}
       actions={[
         {
@@ -102,7 +101,11 @@ const metadata = {
         description: 'Quick to adapt to new design trends, technologies, and client preferences.',
       },
     ]}
-  />
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features3>
   <!-- Content Widget **************** -->
 
   <Content
