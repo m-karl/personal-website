@@ -1,0 +1,30 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+
+const metadata = {
+  title: 'Resume — Karl Ma',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Header -->
+  <Fragment slot="header">
+    <Header
+      links={[
+        { text: 'Home', href: '/' },
+        { text: 'Projects', href: '/projects' },
+        { text: 'Resume', href: '/resume' },
+      ]}
+      actions={[
+        {
+          text: 'Hire me',
+          href: '#',
+        },
+      ]}
+      isSticky
+      showToggleTheme
+    />
+  </Fragment>
+</Layout>
