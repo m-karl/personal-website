@@ -2,14 +2,14 @@
 import Layout from '~/layouts/PageLayout.astro';
 
 import Header from '~/components/widgets/Header.astro';
-import Hero2 from '~/components/widgets/Hero2.astro';
+// import Hero2 from '~/components/widgets/Hero2.astro';
 import Content from '~/components/widgets/Content.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import { getPermalink } from '~/utils/permalinks';
+// import { getPermalink } from '~/utils/permalinks';
 
 import profileimage from '../assets/images/profileimage.png';
 
@@ -37,7 +37,7 @@ const metadata = {
     />
   </Fragment>
 
-  <!-- Hero2 Widget ******************* -->
+  <!-- Hero2 Widget ******************* 
 
   <Hero2
     id="hero"
@@ -58,7 +58,7 @@ const metadata = {
       I'm currently pursuing an undergraduate degree in mathematics at the University of Waterloo<br />
       Take a look at some of my projects below
     </Fragment>
-  </Hero2>
+  </Hero2> -->
 
   <!-- Content Widget - About Me **************** -->
 
@@ -110,7 +110,7 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 dark:bg-transparent"></div>
     </Fragment>
   </Content>
 
