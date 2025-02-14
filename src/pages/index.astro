@@ -14,7 +14,7 @@ import { getPermalink } from '~/utils/permalinks';
 import profileimage from '../assets/images/profileimage.png';
 
 const metadata = {
-  title: 'Home — Karl Ma',
+  title: 'Home – Karl Ma',
 };
 ---
 
@@ -42,7 +42,7 @@ const metadata = {
   <Hero2
     id="hero"
     title="Karl Ma"
-    tagline="Personal Web Demo"
+    tagline="Math – Statistics – Data Science"
     actions={[
       { variant: 'primary', text: 'Hire me', href: getPermalink('/contact#form') },
       { variant: 'secondary', text: 'Hire me', href: getPermalink('/contact#form') },
@@ -54,9 +54,9 @@ const metadata = {
     }}
   >
     <Fragment slot="subtitle">
-      I'm not a Graphic Designer passionate about crafting visual stories. <br /> Without 5 years of experience and a degree
-      from New York University's School of Design. I do not infuse vitality into brands and designs, transforming concepts
-      into captivating realities.
+      Hi, I'm Karl. Thanks for visiting my website!<br />
+      I'm currently pursuing an undergraduate degree in mathematics at the University of Waterloo<br />
+      Take a look at some of my projects below
     </Fragment>
   </Hero2>
 
@@ -67,49 +67,46 @@ const metadata = {
     columns={3}
     items={[
       {
-        icon: 'tabler:brand-dribbble',
+        icon: 'github-mark',
         callToAction: {
           target: '_blank',
-          text: 'Dribbble',
+          text: 'Github',
           href: '#',
         },
       },
       {
-        icon: 'tabler:brand-behance',
+        icon: 'LinkedIn_icon',
         callToAction: {
           target: '_blank',
-          text: 'Behance',
+          text: 'LinkedIn',
           href: '#',
         },
       },
       {
-        icon: 'tabler:brand-pinterest',
+        icon: 'devicon--kaggle',
         callToAction: {
           target: '_blank',
-          text: 'Pinterest',
+          text: 'Kaggle',
           href: '#',
         },
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1491349174775-aaafddd81942?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      src: profileimage,
       alt: 'Colorful Image',
       loading: 'eager',
     }}
   >
     <Fragment slot="content">
-      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About me</h2>
-      <p>
-        Welcome to my creative journey. My work is a testament to my commitment to bringing ideas to life, where each
-        pixel becomes a brushstroke in the canvas of imagination.
-      </p>
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Hi there, I'm Karl</h2>
+      <p>I am currently studying at the University of Waterloo, pursuing a bachelor's in mathematics.</p>
       <br />
       <p>
-        I find inspiration in the world around me, whether through the pages of a captivating novel, the intricate
-        details of typography, or the vibrant hues of nature during my outdoor escapades.
+        My passions are in pure math, statistics, and data science, but I also have numerous other interests, ranging
+        from finance and economics, to piano performance.
       </p>
       <br />
-      <p>If you're curious to dive deeper into my work, you can follow me:</p>
+      <p>I have a few of my projects listed below, so please take a look if you're interested!</p>
     </Fragment>
 
     <Fragment slot="bg">
