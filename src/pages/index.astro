@@ -2,7 +2,6 @@
 import Layout from '~/layouts/PageLayout.astro';
 
 import Header from '~/components/widgets/Header.astro';
-// import Hero2 from '~/components/widgets/Hero2.astro';
 import Content from '~/components/widgets/Content.astro';
 // import CallToAction from '~/components/widgets/CallToAction.astro';
 import Features3 from '~/components/widgets/Features3.astro';
@@ -37,7 +36,7 @@ const metadata = {
     />
   </Fragment>
 
-  <!-- Content Widget - About Me **************** -->
+  <!-- ******** Content Widget - About Me ******** -->
 
   <Content
     id="about"
@@ -76,11 +75,12 @@ const metadata = {
   >
     <Fragment slot="content">
       <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Hi there, I'm Karl</h2>
-      <p>I am currently studying at the University of Waterloo, pursuing a bachelor's in mathematics.</p>
+      <p>Thanks for visiting my website!</p>
+      <p>I am a student at the University of Waterloo, currently pursuing a bachelor's in mathematics.</p>
       <br />
       <p>
-        My passions are in pure math, statistics, and data science, but I also have numerous other interests, ranging
-        from finance and economics, to piano performance.
+        My passions are in pure math, statistics, and data science, but I have a wide variety interests, ranging from
+        finance and economics, to piano performance.
       </p>
       <br />
       <p>I have a few of my projects listed below, so please take a look if you're interested!</p>
@@ -91,12 +91,13 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <!-- Project 1 **************** -->
+  <!-- ******** Projects section ******** -->
 
+  <!-- ******** Project 1 ******** -->
   <Content
     id="porfolio"
     title="Personal Projects"
-    subtitle="Embark on a design journey that surpasses pixels, entering a realm of imagination. Explore my portfolio, where passion and creativity converge to shape enthralling visual narratives."
+    subtitle="Here are some of the things I've been working on in my spare time"
     isReversed
     items={[
       {
@@ -105,14 +106,14 @@ const metadata = {
           'Developed a comprehensive brand identity for a tech startup, Tech Innovators, specializing in disruptive innovations. The goal was to convey a modern yet approachable image that resonated with both corporate clients and tech enthusiasts.',
       },
       {
-        title: 'Role:',
+        title: 'Relvant tools/skills:',
         description:
           'Led the entire branding process from concept to execution. Created a dynamic logo that symbolized innovation, selected a vibrant color palette, and I designed corporate stationery, website graphics, and social media assets.',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1658248165252-71e116af1b34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80',
-      alt: 'Tech Design Image',
+      alt: 'Project1 Image',
     }}
     callToAction={{
       target: '_blank',
@@ -133,7 +134,6 @@ const metadata = {
   </Content>
 
   <!-- Project 2 **************** -->
-
   <Content
     isReversed
     isAfterContent={true}
@@ -144,7 +144,7 @@ const metadata = {
           'Designed a captivating event poster for an art and music festival, "ArtWave Fusion," aiming to showcase the synergy between visual art and music genres.',
       },
       {
-        title: 'Role:',
+        title: 'Relevant tools/skills',
         description: `Translated the festival's creative theme into a visually striking poster. Used bold typography, vibrant colors, and abstract elements to depict the fusion of art and music. Ensured the design captured the festival's vibrant atmosphere.`,
       },
     ]}
