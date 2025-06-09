@@ -1,15 +1,10 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-
 import Header from '~/components/widgets/Header.astro';
 import Content from '~/components/widgets/Content.astro';
-// import CallToAction from '~/components/widgets/CallToAction.astro';
 import Features3 from '~/components/widgets/Features3.astro';
-// import Testimonials from '~/components/widgets/Testimonials.astro';
-// import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-// import { getPermalink } from '~/utils/permalinks';
 
-import profileimage from '../assets/images/profileimage.png';
+import profileimage from '../assets/images/profileimage.jpg';
 
 const metadata = {
   title: 'Home – Karl Ma',
@@ -21,9 +16,9 @@ const metadata = {
     <Header
       links={[
         { text: 'Home', href: '/' },
-        // { text: 'Projects', href: '/projects' },
+        { text: 'Projects', href: '/projects' },
         { text: 'Resume', href: '/resume' },
-        // { text: 'About', href: '/about' },
+        { text: 'About', href: '/about' },
       ]}
       actions={[
         {
@@ -71,17 +66,24 @@ const metadata = {
       src: profileimage,
       alt: 'Colorful Image',
       loading: 'eager',
+      layout: 'constrained',
+      width: 450,
+      height: 450,
     }}
   >
     <Fragment slot="content">
-      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Hi there, I'm Karl</h2>
-      <p>Thanks for visiting my website!</p>
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Hi there, I'm Karl</h2><br />
+      <p>Thanks for visiting my website!</p><br />
       <p>I'm a student at the University of Waterloo, currently pursuing a bachelor's in mathematics.</p>
       <br />
       <p>
+        My interests lie in data science, statistics, and machine learning, and I have a passion for using data to solve
+        real-world problems.
+      </p>
+      <!-- <p>
         My passions are in pure math, statistics, and data science, but I have a wide variety interests, ranging from
         finance and economics, to piano performance.
-      </p>
+      </p> -->
       <br />
       <p>I have a few of my projects listed below, so please take a look if you're interested!</p>
     </Fragment>
