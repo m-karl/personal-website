@@ -1,6 +1,9 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import Header from '~/components/widgets/Header.astro';
+import Content from '~/components/widgets/Content.astro';
+
+import aboutimage from '../assets/images/aboutimage.png';
 
 const metadata = {
   title: 'About – Karl Ma',
@@ -27,4 +30,34 @@ const metadata = {
       showToggleTheme
     />
   </Fragment>
+
+  <!-- About Me -->
+  <Content
+    id="about"
+    image={{
+      src: aboutimage,
+      alt: 'About Me Image',
+      loading: 'eager',
+      layout: 'constrained',
+      width: 440,
+      height: 440,
+      // class: 'rounded-full',
+      // class: 'mx-auto w-full rounded-full bg-gray-500 shadow-lg',
+    }}
+  >
+    <Fragment slot="content">
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About Me</h2><br />
+      <p>Thanks for visiting my website!</p><br />
+      <p>I'm a student at the University of Waterloo, currently pursuing a bachelor's in mathematics.</p>
+      <br />
+      <p>
+        My interests lie in data science, statistics, and machine learning, and I have a passion for using data to solve
+        real-world problems.
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
 </Layout>

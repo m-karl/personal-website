@@ -2,7 +2,6 @@
 import Layout from '~/layouts/PageLayout.astro';
 import Header from '~/components/widgets/Header.astro';
 import Content from '~/components/widgets/Content.astro';
-import Features3 from '~/components/widgets/Features3.astro';
 
 import profileimage from '../assets/images/profileimage.jpg';
 
@@ -64,21 +63,23 @@ const metadata = {
     ]}
     image={{
       src: profileimage,
-      alt: 'Colorful Image',
+      alt: 'Profile Image',
       loading: 'eager',
       layout: 'constrained',
       width: 450,
       height: 450,
+      // class: 'rounded-full',
+      // class: 'mx-auto w-full rounded-full bg-gray-500 shadow-lg',
     }}
   >
     <Fragment slot="content">
       <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Hi there, I'm Karl</h2><br />
       <p>Thanks for visiting my website!</p><br />
-      <p>I'm a student at the University of Waterloo, currently pursuing a bachelor's in mathematics.</p>
+      <p>I'm currently a student at the University of Waterloo, pursuing a bachelor's degree in mathematics.</p>
       <br />
       <p>
-        My interests lie in data science, statistics, and machine learning, and I have a passion for using data to solve
-        real-world problems.
+        My interests lie in statistics and data science. I love learning about new methods and technologies in these
+        fields, and finding ways to apply them to real-world issues.
       </p>
       <!-- <p>
         My passions are in pure math, statistics, and data science, but I have a wide variety interests, ranging from
@@ -92,147 +93,6 @@ const metadata = {
       <div class="absolute inset-0 dark:bg-transparent"></div>
     </Fragment>
   </Content>
-
-  <!-- ******** Projects section ******** -->
-
-  <!-- ******** Project 1 ******** -->
-  <Content
-    isReversed
-    id="porfolio"
-    title="Personal Projects"
-    subtitle="Here are some of the things I've been working on in my spare time"
-    items={[
-      {
-        title: 'Description:',
-        description:
-          'Developed a comprehensive brand identity for a tech startup, Tech Innovators, specializing in disruptive innovations. The goal was to convey a modern yet approachable image that resonated with both corporate clients and tech enthusiasts.',
-      },
-      {
-        title: 'Relvant tools/skills:',
-        description:
-          'Led the entire branding process from concept to execution. Created a dynamic logo that symbolized innovation, selected a vibrant color palette, and I designed corporate stationery, website graphics, and social media assets.',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1658248165252-71e116af1b34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80',
-      alt: 'Project1 Image',
-    }}
-    callToAction={{
-      target: '_blank',
-      text: 'View project on Github',
-      icon: 'tabler:external-link',
-      href: '#',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 1: <br /><span class="text-2xl">Brand identity for tech innovators</span>
-      </h3>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Project 2 **************** -->
-  <Content
-    isAfterContent={true}
-    items={[
-      {
-        title: 'Description:',
-        description:
-          'Machine learning prediction project with a focus on exploratory data analysis, model building, and visualization. Course 7 Project in the Google Advanced Data Analytics Professional Certificate',
-      },
-      {
-        title: 'Relevant tools/skills:',
-        description: `Python, Jupyter Notebooks, machine learning techniques (decision trees, random forest)`,
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1619983081563-430f63602796?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Project 2 Image',
-    }}
-    callToAction={{
-      target: '_blank',
-      text: 'View project on Github',
-      icon: 'tabler:external-link',
-      href: '#',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Machine Learning Turnover Prediction <br /><span class="text-xl"
-          >Capstone project in the Google Advanced Data Analytics Professional Certificate</span
-        >
-      </h3>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Skills ************** -->
-
-  <Features3
-    title="Skills"
-    subtitle="Discover the proficiencies that allow me to bring imagination to life through design."
-    columns={3}
-    defaultIcon="tabler:point-filled"
-    items={[
-      {
-        title: 'Python',
-        description: 'Proficient in crafting visually appealing designs that convey messages effectively.',
-      },
-      {
-        title: 'Data analysis',
-        description: 'Skilled at developing cohesive brand identities, including logos and brand guidelines.',
-      },
-      {
-        title: 'SQL',
-        description: 'Experienced in creating user-friendly interfaces and optimizing user experiences.',
-      },
-      {
-        title: 'Machine Learning',
-        description: 'Skilled in using Photoshop, Illustrator, and InDesign to create and edit visual elements.',
-      },
-      {
-        title: 'R, RStudio',
-        description: 'Adept in selecting and manipulating typefaces to enhance design aesthetics.',
-      },
-      {
-        title: 'Visualization',
-        description: 'Proficient in using color to evoke emotions and enhance visual harmony.',
-      },
-      {
-        title: 'Microsoft Office',
-        description: 'Knowledgeable in designing for both print materials and digital platforms.',
-      },
-      {
-        title: 'Git version control',
-        description: 'Diligent in maintaining precision and quality in all design work.',
-      },
-      {
-        title: 'Problem solving',
-        description: 'Quick to adapt to new design trends, technologies, and client preferences.',
-      },
-    ]}
-  />
-
-  <!-- CallToAction Widget *********** -->
-
-  <!-- <CallToAction
-    title="Let's create together"
-    subtitle="Ready to transform your vision into captivating designs?"
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Hire me',
-        href: '/',
-      },
-    ]}
-  /> -->
 
   <!-- BlogLatestPost Widget **************** -->
   <!-- 

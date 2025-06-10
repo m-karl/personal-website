@@ -31,11 +31,12 @@ const metadata = {
 
   <!-- Projects -->
 
+  <!-- ******** Project 1 ******** -->
   <Content
-    id="porfolio"
-    title="Elevating visual narratives"
-    subtitle="Embark on a design journey that surpasses pixels, entering a realm of imagination. Explore my portfolio, where passion and creativity converge to shape enthralling visual narratives."
     isReversed
+    id="porfolio"
+    title="Personal Projects"
+    subtitle="Here are some of the things I've been working on in my spare time"
     items={[
       {
         title: 'Description:',
@@ -43,19 +44,19 @@ const metadata = {
           'Developed a comprehensive brand identity for a tech startup, Tech Innovators, specializing in disruptive innovations. The goal was to convey a modern yet approachable image that resonated with both corporate clients and tech enthusiasts.',
       },
       {
-        title: 'Role:',
+        title: 'Relvant tools/skills:',
         description:
           'Led the entire branding process from concept to execution. Created a dynamic logo that symbolized innovation, selected a vibrant color palette, and I designed corporate stationery, website graphics, and social media assets.',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1658248165252-71e116af1b34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80',
-      alt: 'Tech Design Image',
+      alt: 'Project1 Image',
     }}
     callToAction={{
       target: '_blank',
-      text: 'Go to the project',
-      icon: 'tabler:chevron-right',
+      text: 'View project on Github',
+      icon: 'tabler:external-link',
       href: '#',
     }}
   >
@@ -65,8 +66,84 @@ const metadata = {
       </h3>
     </Fragment>
 
+    <!-- <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment> -->
+  </Content>
+
+  <!-- Project 2 **************** -->
+  <Content
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Description:',
+        description:
+          'Machine learning prediction project with a focus on exploratory data analysis, model building, and visualization. Course 7 Project in the Google Advanced Data Analytics Professional Certificate',
+      },
+      {
+        title: 'Relevant tools/skills:',
+        description: `Python, Jupyter Notebooks, machine learning techniques (decision trees, random forest)`,
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1619983081563-430f63602796?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      alt: 'Project 2 Image',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'View project on Github',
+      icon: 'tabler:external-link',
+      href: '#',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Machine Learning Turnover Prediction <br /><span class="text-xl"
+          >Capstone project in the Google Advanced Data Analytics Professional Certificate</span
+        >
+      </h3>
+    </Fragment>
+
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
+  </Content>
+
+  <!-- ******** Project 3 ******** -->
+  <Content
+    isReversed
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Description:',
+        description:
+          'Developed a comprehensive brand identity for a tech startup, Tech Innovators, specializing in disruptive innovations. The goal was to convey a modern yet approachable image that resonated with both corporate clients and tech enthusiasts.',
+      },
+      {
+        title: 'Relvant tools/skills:',
+        description:
+          'Led the entire branding process from concept to execution. Created a dynamic logo that symbolized innovation, selected a vibrant color palette, and I designed corporate stationery, website graphics, and social media assets.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1658248165252-71e116af1b34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80',
+      alt: 'Project3 Image',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'View project on Github',
+      icon: 'tabler:external-link',
+      href: '#',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Project 3: <br /><span class="text-2xl">Brand identity for tech innovators</span>
+      </h3>
+    </Fragment>
+
+    <!-- <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment> -->
   </Content>
 </Layout>
